@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-image: url('https://c4.wallpaperflare.com/wallpaper/967/914/468/triangle-black-solid-color-abstract-hd-wallpaper-preview.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    align-items: center;
+  }
+  #stopwatch {
+   
+    font-size: 2em;
+    /* margin: 20px 35%; */
+    color:rgb(49, 21, 73);
+    /* padding: 100px; */
+     
+    /*margin-left: 40%; */
+    margin: auto;
+    /*margin-right: 30%; */
+    width: 250px;
+    height: 250px; 
+    margin-top: 20%;
+    border:5px solid rgb(238, 193, 9);
+    border-radius: 50%;
+    position: relative;
+    display: flex; /* Add this line */
+  justify-content: center; /* Add this line */
+  align-items: center; 
+  box-shadow: 0 0 40px whitesmoke;
+    background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20230624/pngtree-vintage-timer-antique-golden-round-clock-in-3d-illustration-on-orange-image_3660815.jpg');
+    animation: bounce 1s infinite alternate;
+  }
+  .retro{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+  }
+  .retro:hover{
+    color: brown;
+    box-shadow: 0 0 10px whitesmoke;
+    animation: time 3s linear infinite;;
+  }
+  @keyframes time {
+    to {
+        transform: rotate(360deg);
+      }
+  }
+  @keyframes bounce{
+    from{
+        transform: translateY(0);
+    }
+    to{
+        transform: translateY(-100px);
+    }
+  }
+  #controls {
+    margin-top: 50px;
+  }
+  button {
+    font-size: 1em;
+    margin: 0 10px;
+    padding: 10px;
+    cursor: pointer;
+    background-color: chocolate;
+    border-radius: 100px;
+   
+  }
+  #lapList {
+    list-style-type: none;
+    padding: 0;
+    color: white;
+  }
+  label{
+    color:black;
+    padding: 3px;
+    background-color: chocolate;
+  }
+  /* Retro Style */
+  /* .retro #stopwatch {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #ff0101;
+    color: #f30505;
+  }
+
+  /* Digital Style */
+  /* .digital #stopwatch {
+    font-family: 'Digital-7', sans-serif;
+    background-color: #000;
+    color: rgb(12, 14, 12);
+  } */
+
+  /* Analog Style */
+  /* .analog #stopwatch {
+    font-family: 'Orbitron', sans-serif;
+    background-color: #333;
+    color: #fff;
+  } */ 

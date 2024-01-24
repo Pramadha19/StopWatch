@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stopwatch</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="main">
+    <div id="stopwatch" > <div class="retro">00:00:00</div></div>
+    <div id="controls">
+      <button onclick="startStopwatch()">Start</button>
+      <button onclick="stopStopwatch()">Stop</button>
+      <button onclick="resetStopwatch()">Reset</button>
+      <button onclick="recordLap()">Lap</button>
+      <!-- <label>Style:
+        <select onchange="changeStyle(this.value)">
+          <option value="retro">Retro</option>
+          <option value="digital">Digital</option>
+          <option value="analog">Analog</option>
+        </select>
+      </label> -->
+</div>
+</div>
+<ul id="lapList"></ul>
+
+<script src="script.js">
+  </script>
+
+</body>
+</html>
